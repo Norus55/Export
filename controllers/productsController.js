@@ -17,7 +17,7 @@ const   postProduct = async (req, res) => {
 
 //Method get
 const getProduct = async (req,res) => {
-    const products = await Product.find
+    const products = await Product.find()
     res.json(products)
 }
 
