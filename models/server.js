@@ -7,7 +7,7 @@ class Server {
         this.app = express()
         this.pathProduct = '/api/productos'
         this.route()
-        this.dbConnection;
+        this.dbConnection();
         this.listen();
     }
 
