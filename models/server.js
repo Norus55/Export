@@ -21,7 +21,7 @@ class Server {
         this.app.get(this.pathProduct, getProduct)
         this.app.post(this.pathProduct, postProduct)
         this.app.put(this.pathProduct, putProduct)
-        this.app.delete(this.pathProduct, deleteProduct)
+        this.app.delete(this.pathProduct+ '/:id' deleteProduct)
     }
 
     listen() {
